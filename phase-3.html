@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Worldline</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<link href="./styles/index.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript">
+			!(function (o, c) {
+				var n = c.documentElement,
+					t = ' w-mod-';
+				(n.className += t + 'js'),
+					('ontouchstart' in o ||
+						(o.DocumentTouch && c instanceof DocumentTouch)) &&
+						(n.className += t + 'touch');
+			})(window, document);
+		</script>
+		<link
+			href="https://etimg.etb2bimg.com/photo/91468209.cms"
+			rel="shortcut icon"
+			type="image/x-icon"
+		/>
+		<link
+			href="https://assets.website-files.com/img/webclip.png"
+			rel="apple-touch-icon"
+		/>
+		<style>
+			body {
+				/* background: url("https://etimg.etb2bimg.com/photo/91468209.cms") center/cover no-repeat; */
+				/* color: black; */
+			}
+			.circle {
+				opacity: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="project-css w-embed">
+			<style>
+				.circle_item {
+					pointer-events: none;
+				}
+				.circle_link {
+					pointer-events: auto;
+				}
+
+				.circle_item.current .circle_description {
+					transition-delay: 500ms;
+					opacity: 1;
+				}
+				.circle_item.current .circle_dot {
+					background-color: #ffb937;
+				}
+
+				.circle_link:hover .circle_dot {
+					transform: scale(0.7);
+				}
+				.circle_link:hover .circle_date {
+					opacity: 0.7;
+				}
+			</style>
+		</div>
+		<div class="page-wrapper">
+			<div class="global-styles">
+				<div class="html w-embed">
+					<style>
+						/* ALL PAGES CSS */
+
+						/* Main Variables */
+						:root {
+							--main-dark: black;
+							--main-light: white;
+						}
+
+						/* Global Styles */
+						::selection {
+							background: var(--main-light);
+							color: var(--main-dark);
+							text-shadow: none;
+						}
+						img::selection,
+						svg::selection {
+							background: transparent;
+						}
+
+						/* Link color inherits from parent font color  */
+						a {
+							color: inherit;
+						}
+
+						/* Disable / enable clicking on an element and its children  */
+						.no-click {
+							pointer-events: none;
+						}
+						.can-click {
+							pointer-events: auto;
+						}
+
+						.phases-section {
+							transition: all 1s ease-out;
+							opacity: 0;
+						}
+
+						.phases-section.opened {
+							transition: all 1s ease-in;
+							opacity: 1;
+						}
+
+						.phases-section.clicked {
+							transition: all 0.5s ease-out;
+							opacity: 0;
+						}
+
+						/* Target any element with a certain "word" in the class name  */
+						[class*='spacer'] {
+						}
+					</style>
+				</div>
+			</div>
+			<main class="main-wrapper">
+				<section class="section phases-section">
+					<div class="container is-timeline">
+						<div class="circle_wrap">
+							<div class="circle_height">
+								<div class="circle">
+									<div class="circle_wrapper w-dyn-list">
+										<div role="list" class="circle_list w-dyn-items">
+											<div role="listitem" class="circle_item w-dyn-item">
+												<a
+													href="#"
+													class="circle_link w-inline-block phase-1-dot"
+													><p class="circle_date">Phase 1</p>
+													<div class="circle_dot"></div
+												></a>
+												<div class="circle_description">
+													<div class="circle_line"></div>
+													<p class="circle_p">
+														1987 Lorem ipsum dolor sit amet, consectetur
+														adipiscing elit, sed do eiusmod tempor incididunt ut
+														labore et dolore magna aliqua. Neque aliquam
+														vestibulum morbi blandit.
+													</p>
+												</div>
+											</div>
+											<div role="listitem" class="circle_item w-dyn-item">
+												<a
+													href="#"
+													class="circle_link w-inline-block phase-2-dot"
+													><p class="circle_date">Q2</p>
+													<div class="circle_dot"></div
+												></a>
+												<div class="circle_description">
+													<div class="circle_line"></div>
+													<p class="circle_p">
+														2001 Lorem ipsum dolor sit amet, consectetur
+														adipiscing elit, sed do eiusmod tempor incididunt ut
+														labore et dolore magna aliqua. Neque aliquam
+														vestibulum morbi blandit.
+													</p>
+												</div>
+											</div>
+											<div role="listitem" class="circle_item w-dyn-item">
+												<a
+													href="#"
+													class="circle_link w-inline-block phase-3-dot"
+													><p class="circle_date">Q3</p>
+													<div class="circle_dot"></div
+												></a>
+												<div class="circle_description">
+													<div class="circle_line"></div>
+													<p class="circle_p">
+														2003 Lorem ipsum dolor sit amet, consectetur
+														adipiscing elit, sed do eiusmod tempor incididunt ut
+														labore et dolore magna aliqua. Neque aliquam
+														vestibulum morbi blandit.
+													</p>
+												</div>
+											</div>
+											<div role="listitem" class="circle_item w-dyn-item">
+												<a
+													href="#"
+													class="circle_link w-inline-block phase-1-dot"
+													><p class="circle_date">Phase 1</p>
+													<div class="circle_dot"></div
+												></a>
+												<div class="circle_description">
+													<div class="circle_line"></div>
+													<p class="circle_p">
+														2004 Lorem ipsum dolor sit amet, consectetur
+														adipiscing elit, sed do eiusmod tempor incididunt ut
+														labore et dolore magna aliqua. Neque aliquam
+														vestibulum morbi blandit.
+													</p>
+												</div>
+											</div>
+											<div role="listitem" class="circle_item w-dyn-item">
+												<a
+													href="#"
+													class="circle_link w-inline-block phase-2-dot"
+													><p class="circle_date">Q2</p>
+													<div class="circle_dot"></div
+												></a>
+												<div class="circle_description">
+													<div class="circle_line"></div>
+													<p class="circle_p">
+														2006 Lorem ipsum dolor sit amet, consectetur
+														adipiscing elit, sed do eiusmod tempor incididunt ut
+														labore et dolore magna aliqua. Neque aliquam
+														vestibulum morbi blandit.
+													</p>
+												</div>
+											</div>
+											<div role="listitem" class="circle_item w-dyn-item">
+												<a
+													href="#"
+													class="circle_link w-inline-block phase-3-dot"
+													><p class="circle_date">Q3</p>
+													<div class="circle_dot"></div
+												></a>
+												<div class="circle_description">
+													<div class="circle_line"></div>
+													<p class="circle_p">
+														2008 Lorem ipsum dolor sit amet, consectetur
+														adipiscing elit, sed do eiusmod tempor incididunt ut
+														labore et dolore magna aliqua. Neque aliquam
+														vestibulum morbi blandit.
+													</p>
+												</div>
+											</div>
+											<!-- <div role="listitem" class="circle_item w-dyn-item">
+                        <a href="#" class="circle_link w-inline-block"
+                          ><p class="circle_date">2009</p>
+                          <div class="circle_dot"></div
+                        ></a>
+                        <div class="circle_description">
+                          <div class="circle_line"></div>
+                          <p class="circle_p">
+                            2009 Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Neque aliquam
+                            vestibulum morbi blandit.
+                          </p>
+                        </div>
+                      </div> -->
+											<!-- <div role="listitem" class="circle_item w-dyn-item">
+                        <a href="#" class="circle_link w-inline-block"
+                          ><p class="circle_date">2010</p>
+                          <div class="circle_dot"></div
+                        ></a>
+                        <div class="circle_description">
+                          <div class="circle_line"></div>
+                          <p class="circle_p">
+                            2010 Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Neque aliquam
+                            vestibulum morbi blandit.
+                          </p>
+                        </div>
+                      </div>
+                      <div role="listitem" class="circle_item w-dyn-item">
+                        <a href="#" class="circle_link w-inline-block"
+                          ><p class="circle_date">2012</p>
+                          <div class="circle_dot"></div
+                        ></a>
+                        <div class="circle_description">
+                          <div class="circle_line"></div>
+                          <p class="circle_p">
+                            2012 Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Neque aliquam
+                            vestibulum morbi blandit.
+                          </p>
+                        </div>
+                      </div> -->
+											<!-- <div role="listitem" class="circle_item w-dyn-item">
+                        <a href="#" class="circle_link w-inline-block"
+                          ><p class="circle_date">2013</p>
+                          <div class="circle_dot"></div
+                        ></a>
+                        <div class="circle_description">
+                          <div class="circle_line"></div>
+                          <p class="circle_p">
+                            2013 Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Neque aliquam
+                            vestibulum morbi blandit.
+                          </p>
+                        </div>
+                      </div>
+                      <div role="listitem" class="circle_item w-dyn-item">
+                        <a href="#" class="circle_link w-inline-block"
+                          ><p class="circle_date">2014</p>
+                          <div class="circle_dot"></div
+                        ></a>
+                        <div class="circle_description">
+                          <div class="circle_line"></div>
+                          <p class="circle_p">
+                            2014 Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Neque aliquam
+                            vestibulum morbi blandit.
+                          </p>
+                        </div>
+                      </div>
+                      <div role="listitem" class="circle_item w-dyn-item">
+                        <a href="#" class="circle_link w-inline-block"
+                          ><p class="circle_date">2016</p>
+                          <div class="circle_dot"></div
+                        ></a>
+                        <div class="circle_description">
+                          <div class="circle_line"></div>
+                          <p class="circle_p">
+                            2016 Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Neque aliquam
+                            vestibulum morbi blandit.
+                          </p>
+                        </div>
+                      </div>
+                      <div role="listitem" class="circle_item w-dyn-item">
+                        <a href="#" class="circle_link w-inline-block"
+                          ><p class="circle_date">2017</p>
+                          <div class="circle_dot"></div
+                        ></a>
+                        <div class="circle_description">
+                          <div class="circle_line"></div>
+                          <p class="circle_p">
+                            2017 Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Neque aliquam
+                            vestibulum morbi blandit.
+                          </p>
+                        </div>
+                      </div>
+                      <div role="listitem" class="circle_item w-dyn-item">
+                        <a href="#" class="circle_link w-inline-block"
+                          ><p class="circle_date">2018</p>
+                          <div class="circle_dot"></div
+                        ></a>
+                        <div class="circle_description">
+                          <div class="circle_line"></div>
+                          <p class="circle_p">
+                            2018 Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Neque aliquam
+                            vestibulum morbi blandit.
+                          </p>
+                        </div>
+                      </div>
+                      <div role="listitem" class="circle_item w-dyn-item">
+                        <a href="#" class="circle_link w-inline-block"
+                          ><p class="circle_date">2019</p>
+                          <div class="circle_dot"></div
+                        ></a>
+                        <div class="circle_description">
+                          <div class="circle_line"></div>
+                          <p class="circle_p">
+                            2019 Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Neque aliquam
+                            vestibulum morbi blandit.
+                          </p>
+                        </div>
+                      </div> -->
+											<!-- <div role="listitem" class="circle_item w-dyn-item">
+                        <a href="#" class="circle_link w-inline-block"
+                          ><p class="circle_date">2020</p>
+                          <div class="circle_dot"></div
+                        ></a>
+                        <div class="circle_description">
+                          <div class="circle_line"></div>
+                          <p class="circle_p">
+                            2020 Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Neque aliquam
+                            vestibulum morbi blandit.
+                          </p>
+                        </div>
+                      </div> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<script
+			src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6346cc5426a5a84576b277b7"
+			type="text/javascript"
+			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+			crossorigin="anonymous"
+		></script>
+		<script src="./javascript/index.js" type="text/javascript"></script>
+		<script>
+			// set variables
+			let circleParent = $('.circle');
+			let circleItem = $('.circle_item');
+			let itemLength = circleItem.length;
+			// 360 divided by number of items
+			let rotateAmount = 360 / itemLength;
+			let previousIndex = 0;
+			let currentRotation = 0;
+
+			function makeItemActive(item) {
+				let itemIndex = item.index();
+				let difference = itemIndex - previousIndex;
+				let clockwiseRotation = (difference + itemLength) % itemLength;
+				let counterclockwiseRotation = (itemLength - difference) % itemLength;
+				let isClockwise = clockwiseRotation <= counterclockwiseRotation;
+				let amount =
+					(isClockwise ? clockwiseRotation : -counterclockwiseRotation) *
+					rotateAmount;
+				let total = currentRotation + amount;
+
+				circleItem.removeClass('current');
+				item.addClass('current');
+				circleParent.css('transform', `rotate(${total * -1}deg)`);
+
+				previousIndex = itemIndex;
+				currentRotation = total;
+			}
+			makeItemActive(circleItem.first());
+
+			// Set each item's rotation
+			circleItem.each(function (index) {
+				let thisItem = $(this);
+				let childLink = $(this).find('.circle_link');
+				let itemRotation = rotateAmount * index;
+				$(this).css('transform', `rotate(${itemRotation}deg)`);
+
+				// slide parent circle to rotation of the clicked link
+				childLink.on('click', function () {
+					makeItemActive(thisItem);
+				});
+			});
+
+			// reveal circle after item rotations are set
+			circleParent.css('opacity', '1.0');
+		</script>
+		<script>
+			document.querySelector;
+			var count = 0;
+			document.querySelector('.phases-section').classList.add('opened');
+			document.querySelector('.phase-1-dot').addEventListener('click', (e) => {
+				if (++count == 2) {
+					document.querySelector('.phases-section').classList.add('clicked');
+					setTimeout(() => {
+						window.location.href = './phase-1.html';
+					}, 500);
+				}
+			});
+			document.querySelector('.phase-2-dot').addEventListener('click', (e) => {
+				if (++count == 2) {
+					document.querySelector('.phases-section').classList.add('clicked');
+					setTimeout(() => {
+						window.location.href = './phase-2.html';
+					}, 500);
+				}
+			});
+			document.querySelector('.phase-3-dot').addEventListener('click', (e) => {
+				if (++count == 2) {
+					document.querySelector('.phases-section').classList.add('clicked');
+					setTimeout(() => {
+						window.location.href = './phase-3.html';
+					}, 500);
+				}
+			});
+		</script>
+	</body>
+</html>
